@@ -7,17 +7,16 @@
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "14.16.0"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "mongoose": "^5.12.7"
   },
-  "engines": {
-    "node": "14.16.0"
-  },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arnav-0809/Blogging-website.git"
