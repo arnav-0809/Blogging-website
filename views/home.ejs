@@ -1,0 +1,14 @@
+<%-include("partial/header")-%>
+<h1>Home</h1>
+<p><%=home%></p>
+<%posts.forEach(function(post){%>
+    <h1><%=post.title%></h1>
+    <%var str=post.context;%>
+    <%if(str.length<100) {%>
+    <p><%=str%>...<a href="/posts/<%=post.link%>">read more</a></p>
+    <%}else{%>
+       <% str=str.substring(0,100)+"..."; %>
+        <p><%=str%><a href="/posts/<%=post.link%>">read more</a></p>
+    <%}%>
+<%});%>
+<%-include("partial/footer")-%>
